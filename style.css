@@ -1,0 +1,192 @@
+body{
+    font-family:Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:#333;
+    color:white;
+    padding:10px 0;
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0; 
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav ul li a:hover{
+    background-color: gray;
+    border-radius: 4px;
+}
+
+#hero{
+    background-image:url('Wallpaper.jpg');
+    background-size: cover;
+    height: 100vh;
+    display:flex; 
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    color:white;
+    text-align: center;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta{
+    padding: 10px 20 px; 
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.cta:hover{
+    background-color: blueviolet;
+}
+
+#about{
+    margin-top: 60px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2{
+    font-size:2rem;
+    margin-bottom: 20px;
+}
+
+#about p{
+    font-size: 1.2rem;
+    margin:0 auto;
+    max-width: 800px;
+}
+
+#portfolio{
+    background-color:white;
+    padding:60px 20px;
+}
+
+ #portfolio-item{
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+ } 
+ #portfolio-item h3{
+    margin-top: 0;
+}
+
+#contact{
+    padding:60px 20px;
+    text-align: center;
+}
+
+#contact form{
+    margin:0 auto;
+}
+
+#contact label{
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+#contact input, #contact textarea{
+    width:100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid ;
+    border-radius: 4px;
+}
+
+#contact button{
+    padding:10px 20px;
+    background-color: #007bff;
+    color:white;
+    border:none;
+    border-radius: 4px;
+}
+#contact button:hover{
+    background-color: #0056b3;
+}
+
+footer{
+    background-color:#333;
+    color:white;
+    text-align:center;
+    padding: 20px 0;
+    margin-top:60px;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer .social-media a {
+    margin-top: 10px;
+}
+
+footer .social-media a{
+    color:white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover{
+    text-decoration: underline;
+}
+
+ @media(max-width: 768px){
+    nav ul{
+        flex-direction: column;
+    }
+
+    #hero h1{
+        font-size: 2 rem;
+    }
+
+    #hero p{
+        font-size:1reml
+    }
+
+    .cta{
+        font-size: 1rem;
+    }
+
+    #about p{
+        font-size: 1rem;
+    }
+
+    #portfolio-item{
+        margin:20px
+    }
+}
